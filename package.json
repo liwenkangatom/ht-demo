@@ -1,0 +1,11 @@
+{
+  "name": "ht-demo",
+  "version": "1.0.0",
+  "description": "\"the demo for ht\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wenkang",
+  "license": "ISC"
+}
