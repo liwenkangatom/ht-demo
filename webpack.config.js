@@ -10,7 +10,10 @@ module.exports = {
         filename: "bundle.js",
         publicPath: publicPath
     },
-    plugins: [new HtmlWebpackPlugin()],
+    plugins: [new HtmlWebpackPlugin({
+        filename: "index.html",
+        template: "./index.html"
+    })],
     devServer: {
         contentBase: path.join(__dirname, "dist"),
         compress: true,
@@ -29,7 +32,21 @@ module.exports = {
                         presets: ['@babel/preset-env']
                     }
                 }
+            },
+            {
+                test: /\.(png|jpg|gif)$/,
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            limit: 1024
+                        }
+                    }
+                ]
             }
         ]
+    },
+    externals: {
+        ht: 'ht'
     }
 }
