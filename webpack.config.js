@@ -17,6 +17,7 @@ module.exports = {
         port: 9000,
         open: true
     },
+    devtool: "cheap-module-source-map",
     module: {
         rules: [
             {
