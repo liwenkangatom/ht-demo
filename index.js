@@ -1,6 +1,6 @@
 import ht from 'ht';
 import 'bootstrap';
-import butterflySource from "./src/butfly.jpg";
+import butterflySource from "./src/butty.jpg";
 const dataModel = new ht.DataModel();
 const graphView = new ht.graph.GraphView(dataModel);
 
