@@ -1,3 +1,3 @@
-view = document.createElement("div");
+const view = document.createElement("div");
 view.className = 'main';
 document.body.appendChild(view);
